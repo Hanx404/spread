@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="adv/static/js/js01/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <button id="wx">微信支付</button>
+    <button id="zfb">支付宝支付</button>
+<div id="alisubmit"></div>
+</body>
+
+<script>
+    //判断当前浏览器是不是微信浏览器
+    function isWeiXin() {
+        var ua = window.navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function getUrlParam(data){
+        let reg = new RegExp("(^|&)"+ data +"=([^&]*)(&|$)");
+        let r = window.location.search.substr(1).match(reg);
+        if(r!=null)
+            return  decodeURI(r[2]);
+        return null;
+    }
+
+    if(isWeiXin()){
+        let url = window.location.href
+        console.log(url)
+        //判断有没有code
+        let code = getUrlParam('code')
+        console.log(code);
+        if(!code){
+            url = encodeURIComponent(url)
+            window.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc8ddae20da15b5b6&redirect_uri='+url+'&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect'
+        }
+
+    }else{
+        console.log("不是来自微信内置浏览器")
+    }
+
+
+
+
+    $('#wx').click(function(){
+        let wxcode = ''
+        let isWx = isWeiXin()
+        if(isWx){
+            //判断有没有code
+            wxcode = getUrlParam('code')
+            alert(wxcode)
+        }
+    return;
+        pay(1,wxcode,function(res){
+            res = JSON.parse(res)
+            if(res.success){
+                if(isWx){
+                    WeixinJSBridge.invoke(
+                        'getBrandWCPayRequest', {
+                            "appId": res.infor.appId,     //公众号名称，由商户传入
+                            "timeStamp": res.infor.timeStamp,         //时间戳，自1970年以来的秒数
+                            "nonceStr": res.infor.nonceStr, //随机串
+                            "package": res.infor.package,
+                            "signType": res.infor.signType,         //微信签名方式：
+                            "paySign": res.infor.paySign //微信签名
+                        },
+                        function (res) {
+                            console.log(res)
+
+                        }
+                    );
+                }else{
+                    window.location.href = res.infor
+                }
+
+            }
+        })
+    })
+    $('#zfb').click(function(){
+        pay(2,'',function(res){
+            res = JSON.parse(res)
+            $('#alisubmit').append(res.infor)
+        })
+        // let data ="<form id='alipaysubmit' name='alipaysubmit' action='https:\/\/openapi.alipay.com\/gateway.do?charset=UTF-8' method='POST'><input type='hidden' name='biz_content' value='{\"productCode\":\"QUICK_WAP_WAY\",\"body\":\"磨金石教育\",\"subject\":\"磨金石教育\",\"out_trade_no\":\"MJS202201121139417874\",\"total_amount\":0.01,\"timeout_express\":\"1m\"}'\/><input type='hidden' name='app_id' value='2021001163637134'\/><input type='hidden' name='version' value='1.0'\/><input type='hidden' name='format' value='json'\/><input type='hidden' name='sign_type' value='RSA2'\/><input type='hidden' name='method' value='alipay.trade.wap.pay'\/><input type='hidden' name='timestamp' value='2022-01-12 11:39:46'\/><input type='hidden' name='alipay_sdk' value='alipay-sdk-php-20180705'\/><input type='hidden' name='notify_url' value='https:\/\/www.mojinshi.online\/m\/alipaywappay\/notify_url.php'\/><input type='hidden' name='return_url' value='https:\/\/www.mojinshi.online\/m\/#\/paySuccess'\/><input type='hidden' name='charset' value='UTF-8'\/><input type='hidden' name='sign' value='SzHfm\/7KSq8iqNMq3XnfeK78En6L92N347XnafUqLUn1k8y24KS8mBjS3dfUaW7NaSav4QBC6UVprxZl3SI1v3DZtWTzMIu5W5GiGH4h6u6qenN3CzoTr9LjV\/fqU4CtGd\/2xALlLTCE3jjOO2WBGEl8m5HKN0Q\/ON1ECg3acFVot1gffjquYIwColia1Ilc2yEYb2doKn7GjmSajcaCOjN0exLuAdP6OjlU8uhuwaHdry785FoXYy7uz5GYTABXfTU0+dHlkv9tXJsYnd1U52hn4mfcXt2VjGR6t\/ipWn1Ii9reNO0SiaxKRdB+gVcruJqT1GurBtdrpndrRxKIwg=='\/><input type='submit' value='ok' style='display:none;''><\/form><script>document.forms['alipaysubmit'].submit();<\/script>"
+        // $('#alisubmit').append(data)
+    })
+    function pay(paytype,wxcode,func){
+        // let url = 'https://www.mojinshi.online/spread/mApi.php?a=api_infor_submit';
+        let url = 'http://mojinshi.cc/spread/mApi.php?a=api_infor_submit';
+        let data = {
+            mobile:'15153391657',
+            name:'郑炎',
+            code:'123',
+            paytype:paytype,
+            wxcode:wxcode,
+            type:1
+        }
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: data,
+            success: func
+        });
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>支付页面</title>
+    <link rel="stylesheet" href="../static/css/css01/paymentPage.css?v=202201171609">
+</head>
+
+<body>
+    <div id="payBox">
+        <div id="mobileTitle">
+            <span class="star">*</span>
+            手机号（用于验证领取信息，已加密）
+        </div>
+        <!-- input框 -->
+        <div id="inputBox">
+            <input type="text" placeholder="请填写本人的真实姓名" id="inputOne" maxlength="4">
+
+            <input type="text" placeholder="请填写本人的手机号码作为学习账号" id="inputTwo" maxlength="11">
+
+            <div id="inpitVCode">
+                <input type="text" placeholder="请输入短信验证码" id="inputThree" maxlength="6">
+                <div id="vCode">获取验证码</div>
+            </div>
+            <div class="received">领取成功后老师会尽快与您核对信息安排上课</div>
+            <div id="tips">
+                <img src="../static/images/bell.png?v=202201171650" alt="">
+                <div class="prompt">
+                    当前已有<span class="personNum" id="personNum"></span> 人成功领取
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="msgBox">
+        <div id="order">订单信息</div>
+        <div id="orderMsg">
+            <img src="../static/images/img01/orderImg.png?v=202201171650" alt="">
+            <div id="orderBottom">
+                <p class="orderOne">0.99元领取，解锁高薪职业</p>
+                <p class="orderTwo">0.99元学插画，一对一教学模式，0基础也能变身行业大触，技能变现挑战高薪，在家也能赚钱</p>
+                <p class="orderThree">
+                    ¥0.99
+                    <span>¥199</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 支付宝支付 -->
+    <div id="aliPay">
+        <img src="../static/images/aliIcon.png?v=202201171650" alt="" class="aliPayImgOne">
+        <span>支付宝</span>
+        <img src="../static/images/checkSignIcon.png?v=202201171650" alt="" class="aliPayImgTwo">
+        <img src="../static/images/checkSignIcon2.png?v=202201171650" alt="" class="aliPayImgThree"
+            style="display: none;">
+    </div>
+
+    <!-- 微信支付 -->
+    <div id="weixinPay">
+        <img src="../static/images/weixinIcon.png?v=202201171650" alt="" class="weixinPayImgOne">
+        <span>微信支付</span>
+        <img src="../static/images/checkSignIcon2.png?v=202201171650" alt="" class="weixinPayImgTwo"><img
+            src="../static/images/checkSignIcon.png?v=202201171650" alt="" class="weixinPayImgThree"
+            style="display: none;">
+    </div>
+
+    <!-- 确认支付 -->
+    <div id="confirmPay">
+        <div id="confirmPayBtn">
+            确认支付 ¥0.99
+        </div>
+    </div>
+
+    <!-- 支付宝页面 -->
+    <div id="aliPayPage"></div>
+
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/flexible.js"></script>
+    <script src="../static/js/weixinsdk.js"></script>
+    <script src="../static/js/js01/paymentPage.js?v=202201192130"></script>
+</body>
+
+</html>

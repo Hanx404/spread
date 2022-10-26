@@ -1,0 +1,194 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #9e77f8;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: .3733rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+#box {
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: .9333rem;
+}
+
+#boxBottom {
+    box-sizing: border-box;
+    position: relative;
+}
+
+#imgBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#seckillTop {
+    position: absolute;
+    top: 17.40rem;
+    left: .3467rem;
+    width: 9.28rem;
+    height: .96rem;
+    background-color: orange;
+    border-radius: .1333rem;
+    opacity: 0;
+}
+
+#seckillBottom {
+    position: fixed;
+    bottom: .2933rem;
+    left: .3467rem;
+    width: 9.28rem;
+    height: .96rem;
+    background-color: orange;
+    border-radius: .1333rem;
+    opacity: 0;
+}
+
+
+
+#swiperBox {
+    position: relative;
+    width: 100%;
+    height: 5.4933rem;
+    margin-top: -0.2667rem;
+    box-sizing: border-box;
+}
+
+#swiperTop {
+    position: relative;
+    height: 1.7333rem;
+    background-color: #fa3191;
+    box-sizing: border-box;
+}
+
+#release {
+    position: absolute;
+    top: .24rem;
+    left: .2667rem;
+    width: 95%;
+    height: 1.2rem;
+    background-color: #fff;
+    border-radius: .6133rem;
+}
+
+.img02 {
+    padding-top: 0;
+}
+
+.horn {
+    width: .6133rem;
+    height: .6133rem;
+    padding-left: .6667rem;
+    padding-top: .2933rem;
+}
+
+.releaseMsg {
+    position: absolute;
+    top: 1.0667rem;
+    left: 1.4933rem;
+    width: 6.9333rem;
+    font-size: .5333rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 1.4667rem;
+    margin-top: -0.8267rem;
+}
+
+.personNum {
+    color: #f83290;
+}
+
+
+.boxTop {
+    margin-top: 0;
+}
+
+.avatarOne {
+    width: 2.2133rem;
+    height: 1.3333rem;
+    margin-top: .48rem;
+    margin-left: .57rem;
+}
+
+.avatarOne img {
+    border-radius: 50%;
+}
+
+.nameOne {
+    width: 1.5467rem;
+    font-size: .2933rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: .7733rem;
+    padding-left: .44rem;
+}
+
+.timeLimit {
+    width: 8rem;
+    font-size: .3067rem;
+    margin-top: .48rem;
+    margin-left: .5333rem;
+    text-align: center;
+}
+
+.buy {
+    width: 4.08rem;
+    height: .9867rem;
+    border-radius: .5333rem;
+    background-color: #fa3191;
+    font-size: .34rem;
+    text-align: center;
+    line-height: .9867rem;
+    margin-top: .6133rem;
+    margin-left: .5333rem;
+    margin-right: .5333rem;
+    color: #fff;
+}
+
+/* 轮播图 */
+.swiper {
+    width: 100%;
+    height: 3.7467rem;
+    /* height: 680px; */
+    background-color: #fff;
+    z-index: 0;
+}
+
+.swiper-slide {
+    height: 1.8133rem !important;
+}
+
+.firstBox {
+    display: flex;
+    justify-content: start;
+    background-color: #ffbcdd;
+    z-index: 1;
+}
+
+.timeLimitOne {
+    text-decoration: line-through;
+}
+
+.timeLimitTwo {
+    color: #f24b9b;
+    font-size: .43rem;
+}
+
+.timeLimitThree {
+    color: #a2a8a2;
+}

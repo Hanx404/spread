@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>支付成功</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            max-width: 750px;
+            min-width: 320px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        #paymentSuc {
+            width: 1.3333rem;
+            height: 1.3333rem;
+            box-sizing: border-box;
+            margin: 2.1333rem auto;
+        }
+
+        #paymentImg {
+            width: 1.3333rem;
+            height: 1.3333rem;
+        }
+
+        #successMsg {
+            width: 9.8667rem;
+            font-size: .4267rem;
+            margin-top: .2667rem;
+            margin-left: -4.0533rem;
+            text-align: center;
+            line-height: .8rem;
+        }
+
+        #returnHome {
+            width: 1.8667rem;
+            height: .8rem;
+            font-size: .4267rem;
+            border: .0267rem solid black;
+            border-radius: .8rem;
+            text-align: center;
+            line-height: .8rem;
+            margin-top: .5333rem;
+            margin-left: -0.32rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="paymentSuc">
+        <img src="../static/images/paySuccess.png" alt="" id="paymentImg">
+        <div id="successMsg">购买成功，老师会在24小时内联系你哦，<br /> 请注意查看消息。</div>
+        <div id="returnHome">返回</div>
+    </div>
+
+    <script src="../static/js/js02/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/flexible.js"></script>
+    <script>
+        var search = location.search;
+        var aa = search.indexOf('=') + 1
+        var type = search.substring(aa, aa + 1);
+        $('#returnHome').click(function () {
+            window.location.href = 'http://mojinshi.cc/spread/' + type + '/index.html';
+            // window.location.href = 'https://www.mojinshi.online/spread/' + type + '/index.html';
+        })
+    </script>
+</body>
+
+</html>

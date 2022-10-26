@@ -1,0 +1,326 @@
+html,
+body {
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #f5f6f8;
+    box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色 */
+    color: #aab2bd;
+    /* placeholder字体大小 */
+    font-size: .3733rem;
+}
+
+input {
+    font-size: .3733rem;
+}
+
+#payBox {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+}
+
+#mobileTitle {
+    font-size: .2267rem;
+    color: #000;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: .4667rem;
+    margin-left: .1333rem;
+}
+
+.star {
+    color: #f70f04;
+    padding-right: .0667rem;
+}
+
+#inputBox {
+    box-sizing: border-box;
+    margin-top: .3333rem;
+}
+
+#inputOne {
+    width: 9.04rem;
+    height: .96rem;
+    outline: none;
+    border: 0;
+    border-radius: .16rem;
+    box-sizing: border-box;
+    margin-left: .48rem;
+    margin-right: .48rem;
+    padding-left: .5333rem;
+    background-color: #f5f6f8;
+}
+
+#inputTwo {
+    width: 9.04rem;
+    height: .96rem;
+    outline: none;
+    border: 0;
+    border-radius: .16rem;
+    box-sizing: border-box;
+    margin-left: .48rem;
+    margin-right: .48rem;
+    margin-top: .2933rem;
+    padding-left: .5333rem;
+    background-color: #f5f6f8;
+}
+
+#inputThree {
+    width: 6.2133rem;
+    height: .96rem;
+    outline: none;
+    border: 0;
+    border-radius: .16rem;
+    box-sizing: border-box;
+    margin-left: .48rem;
+    margin-right: .48rem;
+    padding-left: .5333rem;
+    margin-top: .2933rem;
+    background-color: #f5f6f8;
+}
+
+#inpitVCode {
+    display: flex;
+}
+
+#vCode {
+    flex: 1;
+    width: 2.1333rem;
+    height: .96rem;
+    background-color: #9d76f7;
+    font-size: .24rem;
+    border-radius: .16rem;
+    margin-top: .2933rem;
+    margin-right: .48rem;
+    color: #fff;
+    text-align: center;
+    line-height: .96rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.received {
+    color: #a29c9e;
+    font-size: .2267rem;
+    margin-left: .48rem;
+    margin-top: .5333rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#tips {
+    position: relative;
+    width: 100%;
+    height: 1.3333rem;
+    background-color: #fffae7;
+    margin-top: .5867rem;
+}
+
+#tips img {
+    padding-top: .4rem;
+    padding-left: .4rem;
+    padding-right: .0667rem;
+    width: .4667rem;
+    height: .4667rem;
+    vertical-align: center;
+}
+
+.prompt {
+    position: absolute;
+    top: 0;
+    left: 1.3333rem;
+    height: 2.6667rem;
+    font-size: .2533rem;
+    color: #feac2a;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.3333rem;
+    vertical-align: top;
+}
+
+.personNum {
+    color: #ff405d;
+    font-size: .2667rem;
+    padding-top: .1333rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+#msgBox {
+    height: 3.6267rem;
+    box-sizing: border-box;
+    margin-top: .32rem;
+    background-color: #fff;
+}
+
+#order {
+    color: #a8a8a6;
+    font-size: .2667rem;
+    margin-left: .3467rem;
+    padding-top: .2rem;
+}
+
+#orderMsg {
+    margin-left: .2667rem;
+    margin-top: .24rem;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#orderMsg img {
+    width: 4.1333rem;
+    height: 2.3467rem;
+}
+
+#orderBottom {
+    flex: 1;
+    text-align: right;
+    margin-top: .0933rem;
+}
+
+.orderOne {
+    color: #000;
+    font-size: .3067rem;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: .3467rem;
+    margin-top: 0;
+}
+
+.orderTwo {
+    color: #a5a5af;
+    font-size: .2267rem;
+    font-weight: 550;
+    margin-right: .3467rem;
+    margin-left: .4533rem;
+    margin-top: .1067rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.orderThree {
+    color: #000;
+    font-size: .2133rem;
+    margin-right: .3467rem;
+    margin-top: .1067rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.orderThree span {
+    color: #cecdd2;
+    text-decoration: line-through;
+    padding-left: .1333rem;
+}
+
+/* 支付宝支付 */
+#aliPay {
+    position: relative;
+    box-sizing: border-box;
+    height: 1.4933rem;
+    margin-top: .32rem;
+    background-color: #fff;
+}
+
+.aliPayImgOne {
+    width: .9333rem;
+    height: .9333rem;
+    padding-top: .2933rem;
+    padding-left: .2667rem;
+}
+
+#aliPay span {
+    color: #000;
+    line-height: 1.4933rem;
+    font-size: .3067rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    vertical-align: top;
+}
+
+.aliPayImgTwo {
+    position: absolute;
+    top: .5333rem;
+    right: .4rem;
+    width: .4533rem;
+    height: .4533rem;
+}
+
+.aliPayImgThree {
+    position: absolute;
+    top: .5333rem;
+    right: .4rem;
+    width: .4533rem;
+    height: .4533rem;
+}
+
+/* 微信支付 */
+#weixinPay {
+    position: relative;
+    box-sizing: border-box;
+    height: 1.4933rem;
+    margin-top: .32rem;
+    background-color: #fff;
+}
+
+.weixinPayImgOne {
+    width: .9333rem;
+    height: .9333rem;
+    padding-top: .2933rem;
+    padding-left: .2667rem;
+}
+
+#weixinPay span {
+    color: #000;
+    line-height: 1.4933rem;
+    font-size: .3067rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    vertical-align: top;
+}
+
+.weixinPayImgTwo {
+    position: absolute;
+    top: .5333rem;
+    right: .4rem;
+    width: .4533rem;
+    height: .4533rem;
+}
+
+.weixinPayImgThree {
+    position: absolute;
+    top: .5333rem;
+    right: .4rem;
+    width: .4533rem;
+    height: .4533rem;
+}
+
+#confirmPay {
+    height: 2.16rem;
+    margin-top: .32rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: .4rem .32rem;
+}
+
+#confirmPayBtn {
+    width: 100%;
+    height: 1.2533rem;
+    border-radius: .6667rem;
+    background-color: #9e77f8;
+    color: #fff;
+    font-weight: 550;
+    font-size: .3467rem;
+    line-height: 1.2533rem;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.aliColor {
+    background: red;
+}

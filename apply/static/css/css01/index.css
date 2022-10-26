@@ -1,0 +1,115 @@
+html,
+body {
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色 */
+    color: #d1d1d1;
+    /* placeholder字体大小 */
+    font-size: .3733rem;
+}
+
+img {
+    width: 100%;
+}
+
+#signBox {
+    width: 100%;
+    height: 6.6667rem;
+    box-sizing: border-box;
+}
+
+#firstName {
+    font-size: .3333rem;
+    line-height: .5333rem;
+    padding-left: 1.04rem;
+    padding-top: .6133rem;
+    font-weight: 550;
+}
+
+.nameStar {
+    color: #fa0100;
+    display: inline-block;
+    width: .32rem;
+    height: .32rem;
+    vertical-align: middle;
+    text-align: center;
+    line-height: .3333rem;
+}
+
+#nameForm {
+    width: 8.6rem;
+    height: 1.0933rem;
+    border: .0267rem solid #163d5b;
+    border-radius: .2667rem;
+    margin-left: -0.3467rem;
+    margin-top: .1333rem;
+    padding-left: .32rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#firstPhone {
+    font-size: .3333rem;
+    line-height: .5333rem;
+    padding-left: 1.04rem;
+    padding-top: .4rem;
+    font-weight: 550;
+}
+
+.phoneStar {
+    color: #fa0100;
+    display: inline-block;
+    width: .32rem;
+    height: .32rem;
+    vertical-align: middle;
+    text-align: center;
+    line-height: .3333rem;
+}
+
+#phoneForm {
+    width: 8.6rem;
+    height: 1.0933rem;
+    border: .0267rem solid #163d5b;
+    border-radius: .2667rem;
+    margin-left: -0.3467rem;
+    margin-top: .1333rem;
+    padding-left: .32rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#signUp {
+
+    width: 8.6rem;
+    height: 1.0933rem;
+    background-color: #0c787b;
+    border-radius: .8rem;
+    margin-top: .56rem;
+    margin-left: .6667rem;
+    font-size: .4rem;
+    font-weight: 550;
+    color: #fff;
+    line-height: 1.2rem;
+    text-align: center;
+    letter-spacing: .0533rem;
+}
+
+.img03 {
+    margin-top: -0.2267rem;
+}
+
+.img04 {
+    margin-top: -0.2267rem;
+}
+
+.img05 {
+    margin-top: -0.2267rem;
+}

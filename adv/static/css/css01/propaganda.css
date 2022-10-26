@@ -1,0 +1,48 @@
+html,
+body {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #9e77f8;
+}
+
+img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+#box {
+    box-sizing: border-box;
+    position: relative;
+}
+
+#boxBottom {
+    box-sizing: border-box;
+    position: relative;
+}
+
+#imgBottom {
+    margin-bottom: 0;
+}
+
+#seckillTop {
+    position: absolute;
+    top: 12.76rem;
+    right: 2.25rem;
+    width: 1.4933rem;
+    height: .4rem;
+    background-color: orange;
+    border-radius: .1333rem;
+    opacity: 0;
+}
+
+#seckillBottom {
+    position: absolute;
+    bottom: .7467rem;
+    right: 2.2133rem;
+    width: 1.4933rem;
+    height: .4rem;
+    background-color: orange;
+    border-radius: .1333rem;
+    opacity: 0;
+}

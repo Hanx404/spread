@@ -1,0 +1,190 @@
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #3557dc;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: .3733rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+#img02 {
+    margin-top: -0.24rem;
+}
+
+#box {
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 1.6rem;
+}
+
+#boxBottom {
+    box-sizing: border-box;
+    position: relative;
+}
+
+#imgBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#seckillTop {
+    position: absolute;
+    top: 18.1rem;
+    left: .3467rem;
+    width: 9.28rem;
+    height: .96rem;
+    background-color: orange;
+    border-radius: .1333rem;
+    opacity: 0;
+}
+
+#seckillBottom {
+    position: fixed;
+    bottom: .2933rem;
+    left: .3467rem;
+    width: 9.28rem;
+    height: .96rem;
+    background-color: orange;
+    border-radius: .1333rem;
+    opacity: 0;
+}
+
+
+/* 新增 */
+#swiperBox {
+    position: relative;
+    width: 100%;
+    margin-top: -0.2667rem;
+    box-sizing: border-box;
+}
+
+#swiperTop {
+    position: relative;
+    height: 1.7333rem;
+    background-color: #335bd7;
+    box-sizing: border-box;
+}
+
+#release {
+    position: absolute;
+    top: .24rem;
+    left: .2667rem;
+    width: 95%;
+    height: 1.2rem;
+    background-color: #fff;
+    border-radius: .6133rem;
+}
+
+.releaseMsg {
+    position: absolute;
+    top: 1.0667rem;
+    left: 1.4933rem;
+    width: 6.9333rem;
+    font-size: .5333rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 1.4667rem;
+    margin-top: -0.8267rem;
+}
+
+
+.horn {
+    width: .6133rem;
+    height: .6133rem;
+    padding-left: .6667rem;
+    padding-top: .2933rem;
+}
+
+.personNum {
+    color: #3a5dd6;
+}
+
+
+.avatarOne {
+    width: 2.2133rem;
+    height: 1.3333rem;
+    margin-top: .48rem;
+    margin-left: .57rem;
+}
+
+.avatarOne img {
+    border-radius: 50%;
+}
+
+.nameOne {
+    width: 1.5467rem;
+    font-size: .2933rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Microsoft YaHei, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: .7733rem;
+    padding-left: .44rem;
+}
+
+.timeLimit {
+    width: 8rem;
+    font-size: .3067rem;
+    margin-top: .48rem;
+    margin-left: .5333rem;
+    text-align: center;
+}
+
+.buy {
+    width: 4.08rem;
+    height: .9867rem;
+    border-radius: .5333rem;
+    background-color: #335bd7;
+    font-size: .34rem;
+    text-align: center;
+    line-height: .9867rem;
+    margin-top: .4667rem;
+    margin-left: .5333rem;
+    margin-right: .5333rem;
+    color: #fff;
+}
+
+/* 轮播图 */
+.swiper {
+    width: 100%;
+    height: 3.7467rem;
+    background-color: #fff;
+    z-index: 0;
+}
+
+.swiper-slide {
+    height: 1.8133rem !important;
+}
+
+.firstBox {
+    display: flex;
+    justify-content: start;
+    background-color: #92acff;
+    z-index: 1;
+}
+
+.timeLimitOne {
+    text-decoration: line-through;
+}
+
+.timeLimitTwo {
+    color: #365cda;
+    font-size: .43rem;
+}
+
+.timeLimitThree {
+    color: #7f828c;
+}
